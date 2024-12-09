@@ -5,484 +5,458 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-   <script src="http://cdn.tailwindcss.com"></script>
-   </script>
+   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-   <nav class="bg-[#151083] p-4 w-[1440px] h-[132px] flex justify-center items-center">
-      <div class="container mx-auto flex justify-between items-center mt-[42px] mb-[42px] h-[48px]">
-         <div class="">
-            <img src="./images/spotlightLogo.png" alt="logo" class="h-8">
+   <nav class="bg-[#151083] p-4">
+      <div class="container mx-auto flex justify-between items-center">
+         <img src="./images/spotlightLogo.png" alt="logo" class="h-8">
+         <div class="hidden md:flex space-x-4 text-sm text-white font-medium">
+            <a href="#" class="px-3 py-2">All Projects</a>
+            <a href="#" class="px-3 py-2">About Us</a>
+            <a href="#" class="px-3 py-2">Start Project</a>
          </div>
-         <div class="flex space-x-4 text-sm w-[513px] h-[24px] text-[14px] leading-[16px] text-[white] font-[500]">
-            <div class="h-[43px] border-l border-[#677395]"></div>
-            <a href="#" class=" px-3 py-2 rounded">All Projects</a>
-            <a href="#" class=" px-3 py-2 rounded">About us</a>
-            <a href="#" class=" px-3 py-2 rounded">Start project</a>
-         </div>
-         <div class="flex gap-9 w-[236px] h-[40px] ">
-            <button class="flex justify-center items-center w-[68px] h-[40px] text-white border-2 border-[#777E90] rounded-[10px] bg-transparent">
-               Login
-            </button>            
-            <button class="flex justify-center items-center w-[132px] h-[40px] rounded-[10px] bg-[#4489fc] text-[14px] leading-[16px] text-[center] font-[700] text-[white] hover:bg-[#2b5ffe] ">
-               Create account
-            </button>
+         <div class="flex gap-4">
+            <button class="px-4 py-2 text-white border border-[#777E90] rounded bg-transparent">Login</button>
+            <button class="px-4 py-2 rounded bg-[#4489fc] text-white hover:bg-[#2b5ffe]">Create Account</button>
          </div>
       </div>
    </nav>
-    <div class="bg-cover bg-center w-full bg-[url('./images/BG.png')] bg-black">
-         <div class="container mx-auto py-12 px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-               <!-- Left Content -->
-               <div class="flex flex-col mt-10">
-                  <div class="flex flex-col gap-6">
-                     <p class="text-[12px] leading-[16px] font-bold text-[#FFB49C] tracking-[0.165em]">
-                        INVEST smarter. Be part of the future
-                     </p>
-                     <h1 class="text-[32px] md:text-[64px] leading-[40px] md:leading-[82px] font-extrabold text-[#fcfcfd] tracking-[-0.02em]">
-                        Invest in the future you believe in
-                     </h1>
-                     <p class="w-[448px] h-[48px] font-[400] text-[16px] leading-[24px] text-[#d3cfde]">Access highly-vetted investment opportunities
-                        in movies, documentaries and cinema works</p>
-                     <div class="flex gap-4">
-                        <button class="px-6 py-3 rounded-[10px] bg-[#4489fc] hover:bg-[#2b5ffe] font-bold text-[16px] text-white">
-                           Invest now
-                        </button>
-                        <button class="px-6 py-3 rounded-[10px] border-2 border-[#E6E8EC] hover:bg-gray-700 font-bold text-[16px] text-white">
-                           Start a campaign
-                        </button>
-                     </div>
-                  </div>
-                  <div class="mt-8">
-                     <img src="./images/circle-button.svg" alt="circle-button">
-                  </div>
-                  <div class="flex items-center gap-4 mt-8">
-                     <h3 class="text-[#d3cfde] text-[14px] font-medium">FOLLOW US</h3>
-                     <div class="w-8 border-t-2 border-[#764AF2]"></div>
-                     <a href="#" aria-label="Facebook" class="text-white hover:text-[#4489fc]">
-                        <i class="fab fa-facebook"></i>
-                     </a>
-                     <a href="#" aria-label="Twitter" class="text-white hover:text-[#4489fc]">
-                        <i class="fab fa-twitter"></i>
-                     </a>
-                     <a href="#" aria-label="LinkedIn" class="text-white hover:text-[#4489fc]">
-                        <i class="fab fa-linkedin"></i>
-                     </a>
-                  </div>                  
+
+   <header class="bg-cover bg-center bg-[url('./images/BG.png')] py-12">
+      <div class="container mx-auto px-4">
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+               <p class="text-sm font-bold text-[#FFB49C] tracking-[0.165em]">INVEST smarter. Be part of the future</p>
+               <h1 class="text-3xl md:text-5xl font-extrabold text-white">Invest in the future you believe in</h1>
+               <p class="mt-4 text-lg text-[#d3cfde]">Access highly-vetted investment opportunities in movies, documentaries, and cinema works.</p>
+               <div class="mt-6 flex gap-4">
+                  <button class="px-6 py-3 rounded bg-[#4489fc] hover:bg-[#2b5ffe] text-white font-bold">Invest Now</button>
+                  <button class="px-6 py-3 rounded border border-[#E6E8EC] hover:bg-gray-700 text-white font-bold">Start a Campaign</button>
                </div>
-               <!-- Right Image -->
-               <div class="flex justify-center items-center">
-                  <img src="./images/heroImg.png" alt="Hero Image">
+               <div class="mt-8 flex items-center gap-4">
+                  <h3 class="text-sm text-[#d3cfde] font-medium">FOLLOW US</h3>
+                  <div class="w-8 border-t border-[#764AF2]"></div>
+                  <a href="#" class="text-white hover:text-[#4489fc]"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="text-white hover:text-[#4489fc]"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-white hover:text-[#4489fc]"><i class="fab fa-linkedin"></i></a>
+               </div>
+            </div>
+            <div class="flex justify-center items-center">
+               <img src="./images/heroImg.png" alt="Hero Image" class="w-full max-w-md">
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <section class="relative bg-white py-8">
+      <div class="container mx-auto text-center">
+         <div class="relative max-w-[1127px] mx-auto rounded-[16px] bg-white flex items-center justify-center -mt-[55px] z-10 px-4">
+            <div class="w-full max-w-[1001.83px] flex flex-wrap md:flex-nowrap items-center justify-between">
+               <div class="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
+                  <div class="text-[#545a66] font-medium text-xl flex items-center justify-center md:justify-start gap-4">
+                     <p>Supported Cryptocurrencies</p>
+                     <div class="w-8 border-t-2 border-[#764AF2]"></div>
+                  </div>
+               </div>
+               <div class="flex justify-center gap-4 flex-wrap">
+                  <img src="./images/Litecoin.png" alt="Litecoin" class="w-8 lg:w-auto">
+                  <img src="./images/Objectcon.png" alt="Gem" class="w-8 lg:w-auto">
+                  <img src="./images/Object2.png" alt="Litecoin" class="w-8 lg:w-auto">
+                  <img src="./images/object3.png" alt="Stellar" class="w-8 lg:w-auto">
+                  <img src="./images/Object4.png" alt="Diamond" class="w-8 lg:w-auto">
+                  <img src="./images/Object5.png" alt="Crypto" class="w-8 lg:w-auto">
                </div>
             </div>
          </div>
       </div>
+   </section>
 
-<div class="relative w-[1127px] h-[105px] rounded-[16px] bg-white flex items-center justify-center mx-auto -mt-10 z-10">
-   <div class="w-[1001.83px] h-[51px] flex items-center justify-between mx-auto"> 
-      <div class="w-[373px] h-[16px] font-[400] text-[24px] leading-[16px] text-[#545a66] flex items-center justify-center gap-4">
-         <p>Supported Cryptocurrencies</p>
-         <div class="w-8 border-t-2 border-[#764AF2]"></div>
-      </div>              
-      <div class="flex gap-4">
-         <img src="./images/Litecoin.png" alt="Bitcoin" class="w-[4-30px] lg:w-fit"/>
-         <img src="./images/Objectcon.png" alt="Gem" class="w-[30px] lg:w-fit"/>
-         <img src="images/Object2.png" alt="Litecoin" class="w-[30px] lg:w-fit"/>
-         <img src="./images/object3.png" alt="Stellar" class="w-[30px] lg:w-fit"/>
-         <img src="./images/Object4.png" alt="Diamond" class="w-[30px] lg:w-fit"/>
-         <img src="./images/Object5.png" alt="Crypto" class="w-[30px] lg:w-fit"/>
-      </div>
-   </div>
-</div>
-
-<div class="bg-white w-full h-auto mt-[-70px] flex justify-center">
-   <div class="w-[1257.87px] mt-[140px] bg-white flex flex-col items-center gap-9">
-     <!-- Header Section -->
-     <div class="w-[665px] text-[#1d263a] flex flex-col items-center justify-center gap-4">
-       <h1 class="text-[48px] leading-[57.6px] font-bold tracking-[-1px]">Popular Projects</h1>
-       <p class="text-[16px] font-medium leading-[30px] text-center">
-         Check out our featured products from promising directors and curations. Start investing now.
-       </p>
-     </div>
-     <!-- Movie Card Grid -->
-     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-       <!-- Repeating Movie Card -->
-       <div class="w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
-                   border border-gray-200 shadow-sm 
-                   hover:shadow-lg transition-shadow duration-300 ease-in-out 
-                   transform hover:-translate-y-2">
-         <!-- Image Section -->
-         <div class="w-full h-[167.72px]">
-           <img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
+   <section class="bg-gray-50 py-12">
+      <div class="container mx-auto">
+         <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold">Popular Projects</h2>
+            <p class="text-lg text-gray-600">Check out our featured products from promising directors and curations. Start investing now.</p>
          </div>
+<!-- Movie Card Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+   <!-- Repeating Movie Card -->
+   <div class="max-w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
+               border border-gray-200 shadow-sm 
+               hover:shadow-lg transition-shadow duration-300 ease-in-out 
+               transform hover:-translate-y-2 mx-auto">
+     <!-- Image Section -->
+     <div class="w-full h-[167.72px]">
+       <img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
+     </div>
  
-         <!-- Content Section -->
-         <div class="flex justify-center items-center w-full h-[399px]">
-           <div class="w-[261.14px] h-[355.49px] flex flex-col gap-4">
-             <!-- Title and Genre -->
-             <div class="w-full flex items-start justify-between">
-               <div class="flex flex-col gap-2">
-                 <button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
-                 <h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
-               </div>
-               <div class="text-[#545a66] text-[16px]">
-                 <i class="fa-solid fa-calendar"></i>
-               </div>
-             </div>
-             <p class="text-[#545a66] text-[12px] leading-[16px]">
-               King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
-             </p>
-             <div class="w-full h-[49px] flex items-start gap-4">
-               <i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
-               <div class="flex flex-col">
-                 <p class="text-[10px] font-medium">Purchasing Goal</p>
-                 <h3 class="text-sm font-bold">ETH 592,000,000</h3>
-               </div>
-             </div>
-             <div class="w-full h-[48px] flex items-start justify-between gap-4">
-               <div  class="flex items-center gap-2">
-                  <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
-                  <p>Kemi Adetiba</p>
-               </div>
-               <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <p>Dubai</p>
-               </div>
-             </div>
+     <!-- Content Section -->
+     <div class="flex justify-center items-center w-full h-[399px]">
+       <div class="max-w-[261.14px] h-[355.49px] flex flex-col gap-4">
+         <!-- Title and Genre -->
+         <div class="w-full flex items-start justify-between">
+           <div class="flex flex-col gap-2">
+             <button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
+             <h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
+           </div>
+           <div class="text-[#545a66] text-[16px]">
+             <i class="fa-solid fa-calendar"></i>
+           </div>
+         </div>
+         <p class="text-[#545a66] text-[12px] leading-[16px]">
+           King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
+         </p>
+         <div class="w-full h-[49px] flex items-start gap-4">
+           <i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
+           <div class="flex flex-col">
+             <p class="text-[10px] font-medium">Purchasing Goal</p>
+             <h3 class="text-sm font-bold">ETH 592,000,000</h3>
+           </div>
+         </div>
+         <div class="w-full h-[48px] flex items-start justify-between gap-4">
+           <div class="flex items-center gap-2">
+             <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
+             <p>Kemi Adetiba</p>
+           </div>
+           <div class="flex items-center gap-2">
+             <i class="fa-solid fa-location-dot"></i>
+             <p>Dubai</p>
            </div>
          </div>
        </div>
-       <!-- Repeat this card 7 more times -->
-       <div class="w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
-       border border-gray-200 shadow-sm 
-       hover:shadow-lg transition-shadow duration-300 ease-in-out 
-       transform hover:-translate-y-2">
-<!-- Image Section -->
-<div class="w-full h-[167.72px]">
-<img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
-</div>
-
-<!-- Content Section -->
-<div class="flex justify-center items-center w-full h-[399px]">
-<div class="w-[261.14px] h-[355.49px] flex flex-col gap-4">
- <!-- Title and Genre -->
- <div class="w-full flex items-start justify-between">
-   <div class="flex flex-col gap-2">
-     <button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
-     <h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
-   </div>
-   <div class="text-[#545a66] text-[16px]">
-     <i class="fa-solid fa-calendar"></i>
-   </div>
- </div>
- <p class="text-[#545a66] text-[12px] leading-[16px]">
-   King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
- </p>
- <div class="w-full h-[49px] flex items-start gap-4">
-   <i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
-   <div class="flex flex-col">
-     <p class="text-[10px] font-medium">Purchasing Goal</p>
-     <h3 class="text-sm font-bold">ETH 592,000,000</h3>
-   </div>
- </div>
- <div class="w-full h-[48px] flex items-start justify-between gap-4">
-   <div  class="flex items-center gap-2">
-      <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
-      <p>Kemi Adetiba</p>
-   </div>
-   <div class="flex items-center gap-2">
-      <i class="fa-solid fa-location-dot"></i>
-      <p>Dubai</p>
-   </div>
- </div>
-</div>
-</div>
-</div>
-<!-- Repeat this card 7 more times -->
-<div class="w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
-border border-gray-200 shadow-sm 
-hover:shadow-lg transition-shadow duration-300 ease-in-out 
-transform hover:-translate-y-2">
-<!-- Image Section -->
-<div class="w-full h-[167.72px]">
-<img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
-</div>
-
-<!-- Content Section -->
-<div class="flex justify-center items-center w-full h-[399px]">
-<div class="w-[261.14px] h-[355.49px] flex flex-col gap-4">
-<!-- Title and Genre -->
-<div class="w-full flex items-start justify-between">
-<div class="flex flex-col gap-2">
-<button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
-<h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
-</div>
-<div class="text-[#545a66] text-[16px]">
-<i class="fa-solid fa-calendar"></i>
-</div>
-</div>
-<p class="text-[#545a66] text-[12px] leading-[16px]">
-King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
-</p>
-<div class="w-full h-[49px] flex items-start gap-4">
-<i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
-<div class="flex flex-col">
-<p class="text-[10px] font-medium">Purchasing Goal</p>
-<h3 class="text-sm font-bold">ETH 592,000,000</h3>
-</div>
-</div>
-<div class="w-full h-[48px] flex items-start justify-between gap-4">
-   <div  class="flex items-center gap-2">
-      <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
-      <p>Kemi Adetiba</p>
-   </div>
-   <div class="flex items-center gap-2">
-      <i class="fa-solid fa-location-dot"></i>
-      <p>Dubai</p>
-   </div>
- </div>
-</div>
-</div>
-</div>
-<!-- Repeat this card 7 more times -->
-<div class="w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
-border border-gray-200 shadow-sm 
-hover:shadow-lg transition-shadow duration-300 ease-in-out 
-transform hover:-translate-y-2">
-<!-- Image Section -->
-<div class="w-full h-[167.72px]">
-<img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
-</div>
-
-<!-- Content Section -->
-<div class="flex justify-center items-center w-full h-[399px]">
-<div class="w-[261.14px] h-[355.49px] flex flex-col gap-4">
-<!-- Title and Genre -->
-<div class="w-full flex items-start justify-between">
-<div class="flex flex-col gap-2">
-<button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
-<h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
-</div>
-<div class="text-[#545a66] text-[16px]">
-<i class="fa-solid fa-calendar"></i>
-</div>
-</div>
-<p class="text-[#545a66] text-[12px] leading-[16px]">
-King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
-</p>
-<div class="w-full h-[49px] flex items-start gap-4">
-<i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
-<div class="flex flex-col">
-<p class="text-[10px] font-medium">Purchasing Goal</p>
-<h3 class="text-sm font-bold">ETH 592,000,000</h3>
-</div>
-</div>
-<div class="w-full h-[48px] flex items-start justify-between gap-4">
-   <div  class="flex items-center gap-2">
-      <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
-      <p>Kemi Adetiba</p>
-   </div>
-   <div class="flex items-center gap-2">
-      <i class="fa-solid fa-location-dot"></i>
-      <p>Dubai</p>
-   </div>
- </div>
-</div>
-</div>
-</div>
-<!-- Repeat this card 7 more times -->
-<div class="w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
-border border-gray-200 shadow-sm 
-hover:shadow-lg transition-shadow duration-300 ease-in-out 
-transform hover:-translate-y-2">
-<!-- Image Section -->
-<div class="w-full h-[167.72px]">
-<img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
-</div>
-
-<!-- Content Section -->
-<div class="flex justify-center items-center w-full h-[399px]">
-<div class="w-[261.14px] h-[355.49px] flex flex-col gap-4">
-<!-- Title and Genre -->
-<div class="w-full flex items-start justify-between">
-<div class="flex flex-col gap-2">
-<button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
-<h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
-</div>
-<div class="text-[#545a66] text-[16px]">
-<i class="fa-solid fa-calendar"></i>
-</div>
-</div>
-<p class="text-[#545a66] text-[12px] leading-[16px]">
-King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
-</p>
-<div class="w-full h-[49px] flex items-start gap-4">
-<i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
-<div class="flex flex-col">
-<p class="text-[10px] font-medium">Purchasing Goal</p>
-<h3 class="text-sm font-bold">ETH 592,000,000</h3>
-</div>
-</div>
-<div class="w-full h-[48px] flex items-start justify-between gap-4">
-   <div  class="flex items-center gap-2">
-      <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
-      <p>Kemi Adetiba</p>
-   </div>
-   <div class="flex items-center gap-2">
-      <i class="fa-solid fa-location-dot"></i>
-      <p>Dubai</p>
-   </div>
- </div>
-</div>
-</div>
-</div>
-<!-- Repeat this card 7 more times -->
-<div class="w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
-border border-gray-200 shadow-sm 
-hover:shadow-lg transition-shadow duration-300 ease-in-out 
-transform hover:-translate-y-2">
-<!-- Image Section -->
-<div class="w-full h-[167.72px]">
-<img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
-</div>
-
-<!-- Content Section -->
-<div class="flex justify-center items-center w-full h-[399px]">
-<div class="w-[261.14px] h-[355.49px] flex flex-col gap-4">
-<!-- Title and Genre -->
-<div class="w-full flex items-start justify-between">
-<div class="flex flex-col gap-2">
-<button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
-<h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
-</div>
-<div class="text-[#545a66] text-[16px]">
-<i class="fa-solid fa-calendar"></i>
-</div>
-</div>
-<p class="text-[#545a66] text-[12px] leading-[16px]">
-King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
-</p>
-<div class="w-full h-[49px] flex items-start gap-4">
-<i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
-<div class="flex flex-col">
-<p class="text-[10px] font-medium">Purchasing Goal</p>
-<h3 class="text-sm font-bold">ETH 592,000,000</h3>
-</div>
-</div>
-<div class="w-full h-[48px] flex items-start justify-between gap-4">
-   <div  class="flex items-center gap-2">
-      <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
-      <p>Kemi Adetiba</p>
-   </div>
-   <div class="flex items-center gap-2">
-      <i class="fa-solid fa-location-dot"></i>
-      <p>Dubai</p>
-   </div>
- </div>
-</div>
-</div>
-</div>
-<!-- Repeat this card 7 more times -->
-<div class="w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
-border border-gray-200 shadow-sm 
-hover:shadow-lg transition-shadow duration-300 ease-in-out 
-transform hover:-translate-y-2">
-<!-- Image Section -->
-<div class="w-full h-[167.72px]">
-<img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
-</div>
-
-<!-- Content Section -->
-<div class="flex justify-center items-center w-full h-[399px]">
-<div class="w-[261.14px] h-[355.49px] flex flex-col gap-4">
-<!-- Title and Genre -->
-<div class="w-full flex items-start justify-between">
-<div class="flex flex-col gap-2">
-<button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
-<h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
-</div>
-<div class="text-[#545a66] text-[16px]">
-<i class="fa-solid fa-calendar"></i>
-</div>
-</div>
-<p class="text-[#545a66] text-[12px] leading-[16px]">
-King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
-</p>
-<div class="w-full h-[49px] flex items-start gap-4">
-<i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
-<div class="flex flex-col">
-<p class="text-[10px] font-medium">Purchasing Goal</p>
-<h3 class="text-sm font-bold">ETH 592,000,000</h3>
-</div>
-</div>
-<div class="w-full h-[48px] flex items-start justify-between gap-4">
-   <div  class="flex items-center gap-2">
-      <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
-      <p>Kemi Adetiba</p>
-   </div>
-   <div class="flex items-center gap-2">
-      <i class="fa-solid fa-location-dot"></i>
-      <p>Dubai</p>
-   </div>
- </div>
-</div>
-</div>
-</div>
-<!-- Repeat this card 7 more times -->
-<div class="w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
-border border-gray-200 shadow-sm 
-hover:shadow-lg transition-shadow duration-300 ease-in-out 
-transform hover:-translate-y-2">
-<!-- Image Section -->
-<div class="w-full h-[167.72px]">
-<img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
-</div>
-
-<!-- Content Section -->
-<div class="flex justify-center items-center w-full h-[399px]">
-<div class="w-[261.14px] h-[355.49px] flex flex-col gap-4">
-<!-- Title and Genre -->
-<div class="w-full flex items-start justify-between">
-<div class="flex flex-col gap-2">
-<button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
-<h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
-</div>
-<div class="text-[#545a66] text-[16px]">
-<i class="fa-solid fa-calendar"></i>
-</div>
-</div>
-<p class="text-[#545a66] text-[12px] leading-[16px]">
-King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
-</p>
-<div class="w-full h-[49px] flex items-start gap-4">
-<i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
-<div class="flex flex-col">
-<p class="text-[10px] font-medium">Purchasing Goal</p>
-<h3 class="text-sm font-bold">ETH 592,000,000</h3>
-</div>
-</div>
-<div class="w-full h-[48px] flex items-start justify-between gap-4">
-   <div  class="flex items-center gap-2">
-      <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
-      <p>Kemi Adetiba</p>
-   </div>
-   <div class="flex items-center gap-2">
-      <i class="fa-solid fa-location-dot"></i>
-      <p>Dubai</p>
-   </div>
- </div>
-</div>
-</div>
-</div>
-<!-- Repeat this card 7 more times -->
-     </div>
-     <div class="w-full bg-white flex items-center justify-center">
-      <button class="w-[170px] h-[48px] rounded-[10px] bg-[#4489fc] hover:bg-[#2b5ffe] text-white font-bold"> All Projects</button>
      </div>
    </div>
+   <!-- Next card goes here -->
+     <!-- Repeating Movie Card -->
+   <div class="max-w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
+   border border-gray-200 shadow-sm 
+   hover:shadow-lg transition-shadow duration-300 ease-in-out 
+   transform hover:-translate-y-2 mx-auto">
+<!-- Image Section -->
+<div class="w-full h-[167.72px]">
+<img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
 </div>
- 
 
+<!-- Content Section -->
+<div class="flex justify-center items-center w-full h-[399px]">
+<div class="max-w-[261.14px] h-[355.49px] flex flex-col gap-4">
+<!-- Title and Genre -->
+<div class="w-full flex items-start justify-between">
+<div class="flex flex-col gap-2">
+ <button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
+ <h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
+</div>
+<div class="text-[#545a66] text-[16px]">
+ <i class="fa-solid fa-calendar"></i>
+</div>
+</div>
+<p class="text-[#545a66] text-[12px] leading-[16px]">
+King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
+</p>
+<div class="w-full h-[49px] flex items-start gap-4">
+<i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
+<div class="flex flex-col">
+ <p class="text-[10px] font-medium">Purchasing Goal</p>
+ <h3 class="text-sm font-bold">ETH 592,000,000</h3>
+</div>
+</div>
+<div class="w-full h-[48px] flex items-start justify-between gap-4">
+<div class="flex items-center gap-2">
+ <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
+ <p>Kemi Adetiba</p>
+</div>
+<div class="flex items-center gap-2">
+ <i class="fa-solid fa-location-dot"></i>
+ <p>Dubai</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Next card goes here --> <!-- Repeating Movie Card -->
+   <div class="max-w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
+   border border-gray-200 shadow-sm 
+   hover:shadow-lg transition-shadow duration-300 ease-in-out 
+   transform hover:-translate-y-2 mx-auto">
+<!-- Image Section -->
+<div class="w-full h-[167.72px]">
+<img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
+</div>
+
+<!-- Content Section -->
+<div class="flex justify-center items-center w-full h-[399px]">
+<div class="max-w-[261.14px] h-[355.49px] flex flex-col gap-4">
+<!-- Title and Genre -->
+<div class="w-full flex items-start justify-between">
+<div class="flex flex-col gap-2">
+ <button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
+ <h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
+</div>
+<div class="text-[#545a66] text-[16px]">
+ <i class="fa-solid fa-calendar"></i>
+</div>
+</div>
+<p class="text-[#545a66] text-[12px] leading-[16px]">
+King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
+</p>
+<div class="w-full h-[49px] flex items-start gap-4">
+<i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
+<div class="flex flex-col">
+ <p class="text-[10px] font-medium">Purchasing Goal</p>
+ <h3 class="text-sm font-bold">ETH 592,000,000</h3>
+</div>
+</div>
+<div class="w-full h-[48px] flex items-start justify-between gap-4">
+<div class="flex items-center gap-2">
+ <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
+ <p>Kemi Adetiba</p>
+</div>
+<div class="flex items-center gap-2">
+ <i class="fa-solid fa-location-dot"></i>
+ <p>Dubai</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Next card goes here --> <!-- Repeating Movie Card -->
+   <div class="max-w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
+   border border-gray-200 shadow-sm 
+   hover:shadow-lg transition-shadow duration-300 ease-in-out 
+   transform hover:-translate-y-2 mx-auto">
+<!-- Image Section -->
+<div class="w-full h-[167.72px]">
+<img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
+</div>
+
+<!-- Content Section -->
+<div class="flex justify-center items-center w-full h-[399px]">
+<div class="max-w-[261.14px] h-[355.49px] flex flex-col gap-4">
+<!-- Title and Genre -->
+<div class="w-full flex items-start justify-between">
+<div class="flex flex-col gap-2">
+ <button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
+ <h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
+</div>
+<div class="text-[#545a66] text-[16px]">
+ <i class="fa-solid fa-calendar"></i>
+</div>
+</div>
+<p class="text-[#545a66] text-[12px] leading-[16px]">
+King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
+</p>
+<div class="w-full h-[49px] flex items-start gap-4">
+<i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
+<div class="flex flex-col">
+ <p class="text-[10px] font-medium">Purchasing Goal</p>
+ <h3 class="text-sm font-bold">ETH 592,000,000</h3>
+</div>
+</div>
+<div class="w-full h-[48px] flex items-start justify-between gap-4">
+<div class="flex items-center gap-2">
+ <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
+ <p>Kemi Adetiba</p>
+</div>
+<div class="flex items-center gap-2">
+ <i class="fa-solid fa-location-dot"></i>
+ <p>Dubai</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Next card goes here --> <!-- Repeating Movie Card -->
+   <div class="max-w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
+   border border-gray-200 shadow-sm 
+   hover:shadow-lg transition-shadow duration-300 ease-in-out 
+   transform hover:-translate-y-2 mx-auto">
+<!-- Image Section -->
+<div class="w-full h-[167.72px]">
+<img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
+</div>
+
+<!-- Content Section -->
+<div class="flex justify-center items-center w-full h-[399px]">
+<div class="max-w-[261.14px] h-[355.49px] flex flex-col gap-4">
+<!-- Title and Genre -->
+<div class="w-full flex items-start justify-between">
+<div class="flex flex-col gap-2">
+ <button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
+ <h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
+</div>
+<div class="text-[#545a66] text-[16px]">
+ <i class="fa-solid fa-calendar"></i>
+</div>
+</div>
+<p class="text-[#545a66] text-[12px] leading-[16px]">
+King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
+</p>
+<div class="w-full h-[49px] flex items-start gap-4">
+<i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
+<div class="flex flex-col">
+ <p class="text-[10px] font-medium">Purchasing Goal</p>
+ <h3 class="text-sm font-bold">ETH 592,000,000</h3>
+</div>
+</div>
+<div class="w-full h-[48px] flex items-start justify-between gap-4">
+<div class="flex items-center gap-2">
+ <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
+ <p>Kemi Adetiba</p>
+</div>
+<div class="flex items-center gap-2">
+ <i class="fa-solid fa-location-dot"></i>
+ <p>Dubai</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Next card goes here --> <!-- Repeating Movie Card -->
+   <div class="max-w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
+   border border-gray-200 shadow-sm 
+   hover:shadow-lg transition-shadow duration-300 ease-in-out 
+   transform hover:-translate-y-2 mx-auto">
+<!-- Image Section -->
+<div class="w-full h-[167.72px]">
+<img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
+</div>
+
+<!-- Content Section -->
+<div class="flex justify-center items-center w-full h-[399px]">
+<div class="max-w-[261.14px] h-[355.49px] flex flex-col gap-4">
+<!-- Title and Genre -->
+<div class="w-full flex items-start justify-between">
+<div class="flex flex-col gap-2">
+ <button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
+ <h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
+</div>
+<div class="text-[#545a66] text-[16px]">
+ <i class="fa-solid fa-calendar"></i>
+</div>
+</div>
+<p class="text-[#545a66] text-[12px] leading-[16px]">
+King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
+</p>
+<div class="w-full h-[49px] flex items-start gap-4">
+<i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
+<div class="flex flex-col">
+ <p class="text-[10px] font-medium">Purchasing Goal</p>
+ <h3 class="text-sm font-bold">ETH 592,000,000</h3>
+</div>
+</div>
+<div class="w-full h-[48px] flex items-start justify-between gap-4">
+<div class="flex items-center gap-2">
+ <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
+ <p>Kemi Adetiba</p>
+</div>
+<div class="flex items-center gap-2">
+ <i class="fa-solid fa-location-dot"></i>
+ <p>Dubai</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Next card goes here --> <!-- Repeating Movie Card -->
+   <div class="max-w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
+   border border-gray-200 shadow-sm 
+   hover:shadow-lg transition-shadow duration-300 ease-in-out 
+   transform hover:-translate-y-2 mx-auto">
+<!-- Image Section -->
+<div class="w-full h-[167.72px]">
+<img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
+</div>
+
+<!-- Content Section -->
+<div class="flex justify-center items-center w-full h-[399px]">
+<div class="max-w-[261.14px] h-[355.49px] flex flex-col gap-4">
+<!-- Title and Genre -->
+<div class="w-full flex items-start justify-between">
+<div class="flex flex-col gap-2">
+ <button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
+ <h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
+</div>
+<div class="text-[#545a66] text-[16px]">
+ <i class="fa-solid fa-calendar"></i>
+</div>
+</div>
+<p class="text-[#545a66] text-[12px] leading-[16px]">
+King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
+</p>
+<div class="w-full h-[49px] flex items-start gap-4">
+<i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
+<div class="flex flex-col">
+ <p class="text-[10px] font-medium">Purchasing Goal</p>
+ <h3 class="text-sm font-bold">ETH 592,000,000</h3>
+</div>
+</div>
+<div class="w-full h-[48px] flex items-start justify-between gap-4">
+<div class="flex items-center gap-2">
+ <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
+ <p>Kemi Adetiba</p>
+</div>
+<div class="flex items-center gap-2">
+ <i class="fa-solid fa-location-dot"></i>
+ <p>Dubai</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Next card goes here --> <!-- Repeating Movie Card -->
+   <div class="max-w-[297px] h-[567px] rounded-[7.44px] bg-white flex flex-col 
+   border border-gray-200 shadow-sm 
+   hover:shadow-lg transition-shadow duration-300 ease-in-out 
+   transform hover:-translate-y-2 mx-auto">
+<!-- Image Section -->
+<div class="w-full h-[167.72px]">
+<img src="./images/movie1.png" alt="King of boys" class="w-full h-full object-cover rounded-t-[7.44px]" />
+</div>
+
+<!-- Content Section -->
+<div class="flex justify-center items-center w-full h-[399px]">
+<div class="max-w-[261.14px] h-[355.49px] flex flex-col gap-4">
+<!-- Title and Genre -->
+<div class="w-full flex items-start justify-between">
+<div class="flex flex-col gap-2">
+ <button class="px-4 py-1 rounded-full bg-[#ef466f] text-white text-[12px] font-semibold">Drama</button>
+ <h2 class="text-[20px] font-bold leading-none text-black">King of Boys</h2>
+</div>
+<div class="text-[#545a66] text-[16px]">
+ <i class="fa-solid fa-calendar"></i>
+</div>
+</div>
+<p class="text-[#545a66] text-[12px] leading-[16px]">
+King of Boys follows the story of Alhaja Eniola Salami, a businesswoman and philanthropist with a checkered past and a promising political future.
+</p>
+<div class="w-full h-[49px] flex items-start gap-4">
+<i class="fa-solid fa-money-bill-wave text-green-600 text-[24px]"></i>
+<div class="flex flex-col">
+ <p class="text-[10px] font-medium">Purchasing Goal</p>
+ <h3 class="text-sm font-bold">ETH 592,000,000</h3>
+</div>
+</div>
+<div class="w-full h-[48px] flex items-start justify-between gap-4">
+<div class="flex items-center gap-2">
+ <i class="fa-solid fa-user text-gray-500 text-[24px]"></i>
+ <p>Kemi Adetiba</p>
+</div>
+<div class="flex items-center gap-2">
+ <i class="fa-solid fa-location-dot"></i>
+ <p>Dubai</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Next card goes here -->
+ </div> 
+ <div class="w-full bg-white flex items-center justify-center mt-6">
+   <button class="w-[170px] h-[48px] rounded-[10px] bg-[#4489fc] hover:bg-[#2b5ffe] text-white font-bold"> All Projects</button>
+  </div>
+      </div>
+   </section>
 </body>
+
+</html>
